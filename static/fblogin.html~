@@ -41,6 +41,8 @@
       // The same caveats as above apply to the FB.login() call here.
       FB.login();
     }
+
+	FB.api('/KTNKenya/?fields=posts', function(response) {  alert(response.id); });
   });
   };
 
