@@ -13,13 +13,14 @@ window.fbAsyncInit = function() {
   // will be handled. 
   FB.Event.subscribe('auth.authResponseChange', function(response) {
     // Here we specify what we do with the response anytime this event occurs. 
+    var token;
     if (response.status === 'connected') {
       // The response object is returned with a status field that lets the app know the current
       // login status of the person. In this case, we're handling the situation where they 
       // have logged in to the app.
-      var token = response.authResponse.accessToken;
-      alert( token);
-
+      
+      token = response.authResponse.accessToken;
+      alert( 'got token');
       testAPI();
     } else if (response.status === 'not_authorized') {
       // In this case, the person is logged into Facebook, but not into the app, so we call
@@ -38,10 +39,20 @@ window.fbAsyncInit = function() {
       // The same caveats as above apply to the FB.login() call here.
       FB.login();
     }
+    var stor_url = 'http://dev.apps.com:5000/receive_simple/';
+    var get_str = stor_url + token;
+    alert(get_str);
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("#div1").load(get_str);
+      });
+    }); 
+    
   });
 };
 
-// Load the SDK asynchronously (function(d){
+// Load the SDK asynchronously 
+(function(d){
 var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
 if (d.getElementById(id)) {return;}
 js = d.createElement('script'); js.id = id; js.async = true;
