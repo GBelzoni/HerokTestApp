@@ -1,1 +1,1 @@
-web: gunicorn hello:app
+web: gunicorn get_fb_data:app

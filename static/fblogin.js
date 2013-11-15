@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head></head>
-<body>
-<div id="fb-root"></div>
-<script>
   window.fbAsyncInit = function() {
   FB.init({
-    appId      : '714612301882745' //'212202535628710', // App ID
-    channelUrl : '//quiet-oasis-3726.herokuapp.com/channel.html', // Channel File
+    appId      : '714612301882745', // App ID
+    channelUrl : '//dev.apps.com:5000/channel.html', // Channel File
     status     : true, // check login status
     cookie     : true, // enable cookies to allow the server to access the session
     xfbml      : true  // parse XFBML
@@ -23,9 +17,7 @@
       // The response object is returned with a status field that lets the app know the current
       // login status of the person. In this case, we're handling the situation where they 
       // have logged in to the app.
-	alert(response.authResponse.accessToken)
-      
-	testAPI();
+      testAPI();
     } else if (response.status === 'not_authorized') {
       // In this case, the person is logged into Facebook, but not into the app, so we call
       // FB.login() to prompt them to do so. 
@@ -34,7 +26,6 @@
       // (1) JavaScript created popup windows are blocked by most browsers unless they 
       // result from direct interaction from people using the app (such as a mouse click)
       // (2) it is a bad experience to be continually prompted to login upon page load.
-		alert(response.authResponse.accessToken)
       FB.login();
     } else {
       // In this case, the person is not logged into Facebook, so we call the login() 
@@ -42,14 +33,9 @@
       // of whether they are logged into the app. If they aren't then they'll see the Login
       // dialog right after they log in to Facebook. 
       // The same caveats as above apply to the FB.login() call here.
-			alert(response.authResponse.accessToken)
       FB.login();
     }
-
-	
   });
-
-	FB.api('/KTNKenya/?fields=posts', function(response) {  alert(response.id); });
   };
 
   // Load the SDK asynchronously
@@ -69,15 +55,4 @@
       console.log('Good to see you, ' + response.name + '.');
     });
   }
-</script>
 
-<!--
-  Below we include the Login Button social plugin. This button uses the JavaScript SDK to
-  present a graphical Login button that triggers the FB.login() function when clicked.
-
-  Learn more about options for the login button plugin:
-  /docs/reference/plugins/login/ -->
-
-<fb:login-button show-faces="true" width="200" max-rows="1"></fb:login-button>
-</body>
-</html>
