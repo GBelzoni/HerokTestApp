@@ -1,4 +1,4 @@
-  window.fbAsyncInit = function() {
+window.fbAsyncInit = function() {
   FB.init({
     appId      : '714612301882745', // App ID
     channelUrl : '//dev.apps.com:5000/channel.html', // Channel File
@@ -17,6 +17,9 @@
       // The response object is returned with a status field that lets the app know the current
       // login status of the person. In this case, we're handling the situation where they 
       // have logged in to the app.
+      var token = response.authResponse.accessToken;
+      alert( token);
+
       testAPI();
     } else if (response.status === 'not_authorized') {
       // In this case, the person is logged into Facebook, but not into the app, so we call
@@ -36,23 +39,25 @@
       FB.login();
     }
   });
-  };
+};
 
-  // Load the SDK asynchronously
-  (function(d){
-   var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-   if (d.getElementById(id)) {return;}
-   js = d.createElement('script'); js.id = id; js.async = true;
-   js.src = "//connect.facebook.net/en_US/all.js";
-   ref.parentNode.insertBefore(js, ref);
-  }(document));
+// Load the SDK asynchronously (function(d){
+var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+if (d.getElementById(id)) {return;}
+js = d.createElement('script'); js.id = id; js.async = true;
+js.src = "//connect.facebook.net/en_US/all.js";
+ref.parentNode.insertBefore(js, ref);
+}(document));
 
-  // Here we run a very simple test of the Graph API after login is successful. 
-  // This testAPI() function is only called in those cases. 
-  function testAPI() {
-    console.log('Welcome!  Fetching your information.... ');
-    FB.api('/me', function(response) {
-      console.log('Good to see you, ' + response.name + '.');
-    });
-  }
+//rHere we run a very simple test of the Graph API after login is successful. 
+// This testAPI() function is only called in those cases. 
+function testAPI() {
+  console.log('Welcome!  Fetching your information.... ');
+  FB.api('/me', function(response) {
+    console.log('Good to see you, ' + response.name + '.');
+  });
+}
+
+
+
 
