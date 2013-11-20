@@ -1,0 +1,22 @@
+import requests
+
+App_ID='714612301882745'
+App_Secret="439aa3a5e9e0143928984cdb33d55176(reset)"
+
+
+grapfburl = 'http://graph.facebook.com/'
+
+get_qry =/oauth/access_token?
+grant_type=fb_exchange_token& 
+    client_id={app-id}&
+    client_secret={app-secret}&
+    fb_exchange_token={short-lived-token}
+
+
+
+/oauth/access_token?  
+    grant_type=fb_exchange_token&           
+    client_id={app-id}&
+    client_secret={app-secret}&
+    fb_exchange_token={short-lived-token}
+
