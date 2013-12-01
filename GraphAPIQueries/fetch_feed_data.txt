@@ -1,0 +1,2 @@
+graph.facebook.com/{0}?fields=feed.fields(message,comments.fields(created_time,from,id,message))&access_token={1}&since={2}
+KTNKenya?fields=feed.since(1385525922).fields(message,comments.fields(created_time,from,id,message))

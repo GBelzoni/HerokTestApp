@@ -1,0 +1,1 @@
+graph.facebook.com/{0}?fields=posts.fields(message,comments.fields(created_time,from,id,message))&access_token={1}

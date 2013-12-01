@@ -1,15 +1,10 @@
 import os
 os.chdir('/home/phcostello/Documents/Projects/HerokTestApp')
-fin = open('UmatiSources.csv')
-text = fin.readlines()
-fin.close()
-text
-text[0]
 
 #Get Source List
 import pandas as pd
 df = pd.read_csv('UmatiSources.csv')
-df = df.ix[0:5]
+df = df.ix[0:10]
 Names = df['Name of Site/Page'].values.tolist()
 Names
 df
@@ -36,9 +31,12 @@ file.close()
 
 #Get URL and create query
 URLs[0]
-page = URLs[0]
+page = 'http://www.facebook.com/pages/Chamgei-FM/150589741636194'
 page = 'KTNKenya'
-page = page.replace('http://www.facebook.com/','')
+page = URLs[0]
+page = 'https://www.facebook.com/239616172813899/'
+page = page.replace('https://www.facebook.com/','')
+page
 get_qry2 = 'https://'+get_qry.format(page,longAT)
 get_qry2
 
@@ -50,15 +48,20 @@ print r.text[0:500]
 #Convert to Json - this converts to python dict object
 jdata = r.json()
 jdata.keys()
+jdata['id']
+
 
 #Convert to list of records to add
 import logging
 logging.basicConfig(filename='FBimports.log',level=logging.DEBUG)
 
-records = []
-i=0
 
-thisRecord = { 'PageName': page,
+records = []
+
+
+for it1 in jdata['posts']['data']:
+
+  thisRecord = { 'PageName': page,
                'PageId': jdata['id'],
                'post_message':None,
                'post_id':None,
@@ -68,19 +71,12 @@ thisRecord = { 'PageName': page,
                'post_comments_from_name':None,
                'post_comments_from_id':None,
                'post_comments_created_time':None}
-
-
-jdata['id']
   
-NL = " " #replacement character for new lines
-for it1 in jdata['posts']['data']:
-  
-
   #Check if top level post is ok
   try:
     thisRecord['post_message'] = it1['message']
     thisRecord['post_id'] = it1['id']
-    thisRecord['post_created_time'] = it1['created_time']]
+    thisRecord['post_created_time'] = it1['created_time']
   except:
     error_str = 'No message in post {}'.format(it1['id'])
     print error_str
@@ -95,8 +91,8 @@ for it1 in jdata['posts']['data']:
             thisRecord['post_comments_from_name'] = it2['from']['name']
             thisRecord['post_comments_from_id'] =  it2['from']['id'] 
             thisRecord['post_comments_created_time'] =it2['created_time']
-
-            records.append(row2)
+            cp_thisRecord = dict(thisRecord) #Remember to copy dict otherwise only passes ref to dict rather than vals
+            records.append(cp_thisRecord)
             
         except:
           error_str = 'Problem with comment id {1}, on post id[2]'.format(it1['id'],it2['id'])
@@ -109,7 +105,7 @@ for it1 in jdata['posts']['data']:
       logging.warning(error_str)
       continue #if error then got to next comment in post
 
-records
+
 
 #Define db model
 db_name = 'Collector.sqlite'
@@ -120,6 +116,10 @@ engine = create_engine('sqlite:///'+db_name,echo=True)
 from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
 
+
+
+
+
 #Import columns and types to make table
 from sqlalchemy import Column, Integer, String
 #Define class that represents table
@@ -127,46 +127,60 @@ class Comments(Base):
   __tablename__ = 'comments'
 
   #Define schema
-  id = Column(Integer, primary_key=True)
+  #id = Column(Integer, primary_key=True)
+  page_name = Column(String)
   page_id = Column(Integer)
-  posts_data_message = Column(String)
-  posts_data_id = Column(Integer)
-  posts_data_created_time = Column(String)
-  posts_data_comments_data_id = Column(Integer)
-  posts_data_comments_data_message = Column(String)
-  posts_data_comments_data_from_name = Column(String)
-  posts_data_comments_data_from_id = Column(Integer)
-  posts_data_comments_data_created_time = Column(String)
+  post_message = Column(String)
+  post_id = Column(Integer)
+  post_created_time = Column(String)
+  post_comments_id = Column(String, primary_key=True)
+  post_comments_message = Column(String)
+  post_comments_from_name = Column(String)
+  post_comments_from_id = Column(String)
+  post_comments_created_time = Column(String)
 
   #Define
   def __init__(self, record):
 
     """
-    Not the best def in the world as needs data to be in correct ord
-    should probably change so records are dictionary
+    Be nice to find a quicker way to do
     """
-    
-    self.page_id = record[0]
-    self.posts_data_message = record[1]
-    self.posts_data_id = record[2]
-    self.posts_data_created_time = record[3]
-    self.posts_data_comments_data_id = record[4]
-    self.posts_data_comments_data_message = record[5]
-    self.posts_data_comments_data_from_name = record[6]
-    self.posts_data_comments_data_from_id = record[7]
-    self.posts_data_comments_data_created_time = record[8]
+
+    { 'PageName': page,
+               'PageId': jdata['id'],
+               'post_message':None,
+               'post_id':None,
+               'post_created_time':None,
+               'post_comments_id':None,
+               'post_comments_message':None,
+               'post_comments_from_name':None,
+               'post_comments_from_id':None,
+               'post_comments_created_time':None}
+
+    self.page_name = record['PageName']
+    self.page_id = record['PageId']
+    self.post_message = record['post_message']
+    self.post_id = record['post_id']
+    self.post_created_time = record['post_created_time']
+    self.post_comments_id = record['post_comments_id']
+    self.post_comments_message = record['post_comments_message']
+    self.post_comments_from_name = record['post_comments_from_name']
+    self.post_comments_from_id = record['post_comments_from_id']
+    self.post_comments_created_time = record['post_comments_created_time']
 
      
 
   def __repr__(self):
-    return "<comment('%s','%s','%s','%s','%s','%s','%s','%s')>" % ( self.posts_data_message,
-                                               self.posts_data_id,
-                                               self.posts_data_created_time,
-                                               self.posts_data_comments_data_id,
-                                               self.posts_data_comments_data_message,
-                                               self.posts_data_comments_data_from_name,
-                                               self.posts_data_comments_data_from_id,
-                                               self.posts_data_comments_data_created_time)
+    return "<comment('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')>" % (self.page_name,
+                                                                   self.page_id,
+                                                                   self.post_message,
+                                                                   self.post_id,
+                                                                   self.post_created_time,
+                                                                   self.post_comments_id,
+                                                                   self.post_comments_message,
+                                                                   self.post_comments_from_name,
+                                                                   self.post_comments_from_id,
+                                                                   self.post_comments_created_time)
 
 
 
@@ -181,25 +195,50 @@ from sqlalchemy.orm import sessionmaker
 Session = sessionmaker(bind=engine)
 session = Session() #The session object is now the handle to our db
 
+records[0]
+records[1]
+rc_comments = Comments(records[0])
+
+#Check all fields are there
+
+print rc_comments.page_name
+print rc_comments.page_id
+print rc_comments.post_message
+print rc_comments.post_id
+print rc_comments.post_created_time
+print rc_comments.post_comments_id
+print rc_comments.post_comments_message
+print rc_comments.post_comments_from_name
+print rc_comments.post_comments_from_id
+print rc_comments.post_comments_created_time
+
 #Add records to db
-
-rc_comments.posts_data_id
-rc_comments.posts_data_message
-rc_comments.posts_data_comments_data_message
-
+from sqlalchemy.exc import IntegrityError
 
 for rc in records:
+  #have used post_comments_id as PRIMARY_KEY
+  #So should throw IntegretyError if posts already exits
+  #this means that can skip this and rollback
+
   rc_comments = Comments(rc)
   session.add(rc_comments)
+  try:
+    session.commit()
+  except IntegrityError:
+    print "post id {0} already in db".format(rc_comments.post_id)
+    session.rollback()
+    continue                                                      
 
-session.commit()
 
 
-this_comment = session.query(Comments).first()
-this_comment
+
+
+this_query = session.query(Comments).filter_by(post_comments_id='10153535800975533_25245467')
+this_query.all()
+session
+
 session.dirty
 session.new
-
 
 
 
