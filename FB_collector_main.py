@@ -7,15 +7,22 @@ import fb_query
 reload(fb_query)
 
 
-fb1 = fb_query.fb_query()
+#Setup fbquery object
+fb1 = fb_query.fb_query(start_upd_offset = datetime.timedelta(hours=24))
 fb1.access_token
 
+#Set up test page to query
 page_info = { 'url' : 'KTNKenya',
               'page_name' : 'KTNKenya' }
 
-fb1.do_query(page_info)
-fb1.to_records()[0]
-fb1.get_qry
+#Do query
+fb1.do_id_query(page_info)
+fb1.post_ids
+fb1.do_comments_query()
+
+fb1.query_results[0]
+fb1.to_records() #Convert to records
+
 
 #Get Source List
 import pandas as pd
@@ -31,7 +38,16 @@ len(URLs)
 page_infos = zip(Names,URLs)
 page_infos = [ {'page_name' : it[0], 'url' : it[1]} for it in page_infos]
 
-status = fb1.do_query(page_infos[6])
+
+i=0
+for it in page_infos:
+    try:
+        fb1.do_id_query(it)
+        print 'success for {0}, row {1}'.format(it['page_name'],i)
+    except:
+        print 'Error for {0}, row {1}'.format(it['page_name'],i)
+        
+
 print status
 if status != 400:
     print len(fb1.to_records())
@@ -45,7 +61,6 @@ page_infos[num]
 record_list = get_latest_posts(page_infos[num]) 
 len(record_list)
 #Add to db
-
 record_list[0]
 session = setup_sqlalchemy()
 for rc in record_list:
