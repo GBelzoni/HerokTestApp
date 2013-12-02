@@ -1,0 +1,1 @@
+graph.facebook.com/{0}?fields=feed.since({1}).limit(300).fields(id)&access_token={3}

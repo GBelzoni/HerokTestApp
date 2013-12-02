@@ -1,0 +1,1 @@
+graph.facebook.com/{0}?fields=feed.since({1}).fields(message,created_time,comments.since({2}).fields(created_time,from,id,message)&access_token={3}
