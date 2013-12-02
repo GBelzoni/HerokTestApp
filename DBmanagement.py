@@ -8,14 +8,16 @@ def setup_sqlalchemy():
     #Create connection to db
     from sqlalchemy import create_engine
     engine = create_engine('sqlite:///'+db_name,echo=False)
-
+    
     #connect to engine
     #This next would go where the engine statement is in prod. It is handle to db
     from sqlalchemy.orm import sessionmaker
     Session = sessionmaker(bind=engine)
     session = Session() #The session object is now the handle to our db
 
-    return session
+    
+
+    return session, engine
     
 #Import columns and types to make table
 from sqlalchemy import Column, Integer, String
@@ -81,7 +83,7 @@ class Comments(Base):
                                                                    self.post_comments_created_time)
 
 
-def create_all():
+def create_all(engine):
     #Create the tables in db specified by engine
     Base.metadata.create_all(engine)
 
@@ -102,12 +104,12 @@ def add_record(rc,session):
 
   rc_comments = Comments(rc)
   session.add(rc_comments)
-  try:
-    session.commit()
-  except IntegrityError:
-    print "post id {0} already in db".format(rc_comments.post_id)
-    session.rollback()
-                                                      
+##  try:
+##    session.commit()
+##  except IntegrityError:
+##    print "post id {0} already in db".format(rc_comments.post_id)
+##    session.rollback()
+##                                                      
 
 
 

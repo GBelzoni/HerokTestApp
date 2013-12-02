@@ -62,16 +62,22 @@ class fb_query(object):
 
         
 
-    def do_id_query(self, page_info):
+    def do_id_query(self, page_info, ret_qry=False):
+
+        self.page_info = None
+        self.page_id = None
+        self.post_ids = None
 
         self.page_info = page_info
         page_url = page_info['url'].replace('http://www.facebook.com/','')
-
+        page_url = page_url.replace('groups/','')
+        page_url = page_url.replace('?ref=stream','')
         #Get page ids
         id_query2 = 'https://'+self.id_query.format(page_url,
                                                     self.posts_since_unix,
                                                     longAT)
 
+        
         r_id = requests.get(id_query2)
         
         if r_id.status_code != 400:
@@ -79,7 +85,8 @@ class fb_query(object):
             self.page_id = ids_json['id']
             self.post_ids = [ it['id'] for it in ids_json['feed']['data']]
         
-
+        if ret_qry:
+            return id_query2
         
     def do_comments_query(self):
         """
@@ -92,9 +99,11 @@ class fb_query(object):
         facebook get request in json format
         """
 
+        self.query_results = []
+        
         if len(self.post_ids) != 0:
             #Get comments from post
-            for it in self.post_ids[0:3]:
+            for it in self.post_ids:
                 get_qry_data2 = 'https://'+self.data_query.format(it,longAT)
                 #print get_qry_data2
                 r_comments = requests.get(get_qry_data2)
