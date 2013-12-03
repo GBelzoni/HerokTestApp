@@ -2,16 +2,36 @@ import logging
 import os
 os.chdir('/home/phcostello/Documents/Projects/HerokTestApp')
 from DBmanagement import *
+##DB management
+session, engine = setup_sqlalchemy()
+create_all(engine)
+
+
+#Get Source List
+import pandas as pd
+
+#Get latest post time
+post_times = session.query(Comments.post_created_time)
+EAC_offset = datetime.timedelta(hours = 3)
+post_datetimes = [pd.to_datetime(time)[0] + EAC_offset for time in post_times]
+post_datetimes
+
+
 from fb_query import *
-
-reload( DBmanagement)
-
 import fb_query
 reload(fb_query)
+max(post_datetimes)
+datetime.datetime.now()
+end_window_time = datetime.datetime.now()
+window_delta = datetime.datetime.now() - max(post_datetimes)
+
+import time
+int(time.mktime(end_window_time.timetuple()))
 
 
 #Setup fbquery object
-fb1 = fb_query.fb_query(start_upd_offset = datetime.timedelta(days=1))
+fb1 = fb_query.fb_query(end_upd_window = end_window_time,
+                        start_upd_offset = window_delta)
 fb1.access_token
 
 #Set up test page to query
@@ -24,13 +44,10 @@ page_info['url'].replace('http://www.facebook.com/','')
 #fb1.do_id_query(page_infos[20],ret_qry=True)
 #fb1.post_ids
 #fb1.do_comments_query()
-
 #fb1.query_results[0]
 #fb1.to_records() #Convert to records
 
 
-#Get Source List
-import pandas as pd
 
 df = pd.read_csv('UmatiSources.csv')
 #df = df.ix[0:10]
@@ -46,10 +63,11 @@ page_infos = [ {'page_name' : it[0], 'url' : it[1]} for it in page_infos]
 
 logging.basicConfig(filename='main.log', filemode='w',level=logging.DEBUG)
 
+
+
+ 
+
 i=0
-##DB management
-session, engine = setup_sqlalchemy()
-create_all(engine)
 for it in page_infos[20:21]:
     log_string = "Name: {0} , url: {1}".format(it['page_name'],it['url'])
     try:
