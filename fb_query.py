@@ -5,7 +5,7 @@ import requests
 import datetime
 import time
 
-os.chdir('/home/phcostello/Documents/Projects/HerokTestApp')
+os.chdir('/home/phcostello/git/HerokTestApp')
 
 #These come from app I have setup
 App_ID='714612301882745'
@@ -62,33 +62,43 @@ class fb_query(object):
 
         
 
-    def do_id_query(self, page_info, ret_qry=False):
+    def do_id_query(self, page_info, top_level_fields, ret_qry=False):
 
         self.page_info = None
         self.page_id = None
-        self.post_ids = None
+        self.post_ids = []
 
         self.page_info = page_info
         page_url = page_info['url'].replace('http://www.facebook.com/','')
         page_url = page_url.replace('groups/','')
         page_url = page_url.replace('?ref=stream','')
         #Get page ids
-        id_query2 = 'https://'+self.id_query.format(page_url,
-                                                    self.posts_since_unix,
-                                                    longAT)
-
         
-        r_id = requests.get(id_query2)
+        for field in top_level_fields:
+            id_query2 = 'https://'+self.id_query.format(page_url,
+                                                        field,
+                                                        self.posts_since_unix,
+                                                        longAT)
+    
+            
+            if ret_qry:
+                print id_query2
+            
+            
+            r_id = requests.get(id_query2)
+            
+            if r_id.status_code != 400:
+                ids_json = r_id.json()
+                self.page_id = ids_json['id']
+                self.post_ids = self.post_ids + [ it['id'] for it in ids_json[field]['data']]
+            
+                
         
-        if r_id.status_code != 400:
-            ids_json = r_id.json()
-            self.page_id = ids_json['id']
-            self.post_ids = [ it['id'] for it in ids_json['feed']['data']]
+        #get rid of duplicates
+        self.post_ids = list(set(self.post_ids))
         
-        if ret_qry:
-            return id_query2
         
-    def do_comments_query(self):
+    def do_comments_query(self, num_limit):
         """
         Input:
         URL of facebook
@@ -104,7 +114,9 @@ class fb_query(object):
         if len(self.post_ids) != 0:
             #Get comments from post
             for it in self.post_ids:
-                get_qry_data2 = 'https://'+self.data_query.format(it,longAT)
+                get_qry_data2 = 'https://'+self.data_query.format(it,
+                                                                  num_limit,
+                                                                  longAT)
                 #print get_qry_data2
                 r_comments = requests.get(get_qry_data2)
                 comments_json = r_comments.json()
