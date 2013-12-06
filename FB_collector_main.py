@@ -26,8 +26,10 @@ end_window_time = datetime.datetime.now()
 window_delta = datetime.datetime.now() - max(post_datetimes)
 
 import time
-int(time.mktime(end_window_time.timetuple()))
+latest_time = int(time.mktime(end_window_time.timetuple()))
 
+with  open('latest_time.txt','w') as f:
+    f.write(str(latest_time))
 
 #Setup fbquery object
 fb1 = fb_query.fb_query(end_upd_window = end_window_time,
@@ -35,17 +37,17 @@ fb1 = fb_query.fb_query(end_upd_window = end_window_time,
 fb1.access_token
 
 #Set up test page to query
-page_info = { 'url' : 'http://www.facebook.com/239616172813899',
+page_info = { 'url' : 'KTNKenya',
               'page_name' : 'http://www.facebook.com/groups/sabaotonline2010/' }
 
 page_info['url'].replace('http://www.facebook.com/','')
 
 #Do query
-#fb1.do_id_query(page_infos[20],ret_qry=True)
-#fb1.post_ids
-#fb1.do_comments_query()
-#fb1.query_results[0]
-#fb1.to_records() #Convert to records
+fb1.do_id_query(page_info,ret_qry=True)
+fb1.post_ids
+fb1.do_comments_query()
+fb1.query_results[0]
+fb1.to_records() #Convert to records
 
 
 
@@ -68,7 +70,7 @@ logging.basicConfig(filename='main.log', filemode='w',level=logging.DEBUG)
  
 
 i=0
-for it in page_infos[20:21]:
+for it in page_infos:
     log_string = "Name: {0} , url: {1}".format(it['page_name'],it['url'])
     try:
         fb1.do_id_query(it)
