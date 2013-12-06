@@ -1,1 +1,0 @@
-graph.facebook.com/{0}?fields=feed.limit(150).since({1}).fields(message,comments.limit(200))&access_token={3}

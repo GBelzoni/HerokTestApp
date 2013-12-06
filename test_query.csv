@@ -1,1 +1,0 @@
-id,posts.data.message,posts.data.id,posts.data.created_time,posts.data.comments.data.id,posts.data.comments.data.message,posts.data.comments.data.from.name,posts.data.comments.data.from.id,posts.data.comments.data.created_time

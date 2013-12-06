@@ -1,1 +1,0 @@
-graph.facebook.com/KTNKenya?fields=posts.fields(message,comments.fields(created_time,from,id,message))&access_token={0}

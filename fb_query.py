@@ -22,7 +22,7 @@ get_post_ids = file.read()
 file.close()
 
 #Read query for getting comments from post
-file = open('GraphAPIQueries/fetch_feed_data3.txt')
+file = open('GraphAPIQueries/fetch_feed_data_comments.txt')
 get_query_data = file.read()
 file.close()
 
