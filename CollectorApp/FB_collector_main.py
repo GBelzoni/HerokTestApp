@@ -2,7 +2,6 @@ import logging
 import os
 os.chdir('/home/phcostello/git/HerokTestApp')
 import datetime
-
 from DBmanagement import *
 
 
@@ -41,7 +40,7 @@ reload(fb_query)
 fb1 = fb_query.fb_query(end_upd_window = end_window_time,
                         start_upd_offset = window_delta)
 fb1.access_token
-# 
+ 
 # #Set up test page to query
 # page_info = { 'url' : 'myuhurukenyatta',
 #               'page_name' : 'http://www.facebook.com/groups/sabaotonline2010/' }
