@@ -1,7 +1,13 @@
 window.fbAsyncInit = function() {
+  
+  var app_domain = 'localhost:5000'
+  var app_id = '714612301882745' //pc local dev
+  // var app_id = '565857103493139' //ihub dev
+  
+   
   FB.init({
-    appId      : '714612301882745', // App ID
-    channelUrl : '//dev.apps.com:5000/channel.html', // Channel File
+    appId      : app_id, // App ID
+    channelUrl : '//' + app_domain + '/channel.html', // Channel File
     status     : true, // check login status
     cookie     : true, // enable cookies to allow the server to access the session
     xfbml      : true  // parse XFBML
@@ -20,7 +26,7 @@ window.fbAsyncInit = function() {
       // have logged in to the app.
       
       token = response.authResponse.accessToken;
-      alert( 'got token');
+      // alert( 'got token');
       testAPI();
     } else if (response.status === 'not_authorized') {
       // In this case, the person is logged into Facebook, but not into the app, so we call
@@ -39,12 +45,24 @@ window.fbAsyncInit = function() {
       // The same caveats as above apply to the FB.login() call here.
       FB.login();
     }
-    var stor_url = 'http://dev.apps.com:5000/receive_simple/';
-    var get_str = stor_url + token;
-    alert(get_str);
+    
+    
+    //Button handlers
+    var domain_url ='http://' + app_domain  
+
+    //Button handler - short AT
+    var stor_url = domain_url + '/receive_simple/';
+    var get_short_AT_str = stor_url + token;
     $(document).ready(function(){
-      $("button").click(function(){
-        $("#div1").load(get_str);
+      $("#get_short_AT").click(function(){
+        $("#div1").load(get_short_AT_str);
+      });
+    }); 
+    
+    //Button handler - long AT
+    $(document).ready(function(){
+      $("#get_long_AT").click(function(){
+        $("#div2").load(domain_url + '/get_long_AT');
       });
     }); 
     

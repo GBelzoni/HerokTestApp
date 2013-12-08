@@ -18,5 +18,6 @@ def disply_html():
 	return render_template('helloworld2.html') 
 
 
-
+if __name__ == '__main__':
+  app.run()
 

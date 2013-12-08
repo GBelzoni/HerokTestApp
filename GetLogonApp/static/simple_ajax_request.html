@@ -20,7 +20,8 @@ xmlhttp.onreadystatechange=function()
     document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
     }
   }
-xmlhttp.open("GET","http://dev.apps.com:5000/receive_simple/hi",true);
+xmlhttp.open("GET","http://localhost:5000/receive_simple/hi",true);
+
 xmlhttp.send();
 }
 </script>
