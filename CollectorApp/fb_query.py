@@ -5,24 +5,23 @@ import requests
 import datetime
 import time
 
-os.chdir('/home/phcostello/git/HerokTestApp')
 
 #These come from app I have setup
 App_ID='714612301882745'
 App_Secret="439aa3a5e9e0143928984cdb33d55176"
 
 #Read Access token
-file_AT = open('long_AT.txt')
+file_AT = open('GetLogonApp/long_AT.txt')
 longAT =file_AT.read()
 file_AT.close()
 
 #Read query for getting post ids
-file = open('GraphAPIQueries/fetch_feed_ids.txt')
+file = open('CollectorApp/GraphAPIQueries/fetch_feed_ids.txt')
 get_post_ids = file.read()
 file.close()
 
 #Read query for getting comments from post
-file = open('GraphAPIQueries/fetch_feed_data_comments.txt')
+file = open('CollectorApp/GraphAPIQueries/fetch_feed_data_comments.txt')
 get_query_data = file.read()
 file.close()
 
@@ -75,6 +74,7 @@ class fb_query(object):
         #Get page ids
         
         for field in top_level_fields:
+            print 'doing field {}'.format(field)
             id_query2 = 'https://'+self.id_query.format(page_url,
                                                         field,
                                                         self.posts_since_unix,

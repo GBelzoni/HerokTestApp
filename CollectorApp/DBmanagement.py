@@ -1,5 +1,9 @@
-import os
-os.chdir('/home/phcostello/Documents/Projects/HerokTestApp')
+# import os
+# collector_wd = os.path.dirname(os.path.realpath(__file__))
+# collector_wd = '/home/phcostello/git/HerokTestApp/CollectorApp'
+# os.chdir(collector_wd)
+
+
 
 def setup_sqlalchemy():
     
@@ -20,7 +24,7 @@ def setup_sqlalchemy():
     return session, engine
     
 #Import columns and types to make table
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, DateTime
 
 #import base class to make table from
 from sqlalchemy.ext.declarative import declarative_base
@@ -29,8 +33,6 @@ Base = declarative_base()
 
 #Add records to db
 from sqlalchemy.exc import IntegrityError
-
-
     
 #Define class that represents Comments table
 class Comments(Base):
@@ -103,7 +105,8 @@ def create_all(engine):
 def add_record(rc,session):
 
   rc_comments = Comments(rc)
-  session.add(rc_comments)
+  session.merge(rc_comments) #use merge rather than add to deal with duplicates
+#   session.add(rc_comments)
 ##  try:
 ##    session.commit()
 ##  except IntegrityError:

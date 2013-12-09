@@ -1,8 +1,10 @@
-import logging
 import os
-os.chdir('/home/phcostello/git/HerokTestApp')
+collector_wd = os.path.dirname(os.path.realpath(__file__))
+collector_wd = '/home/phcostello/git/HerokTestApp/CollectorApp'
+os.chdir(collector_wd)
+import logging
 import datetime
-from DBmanagement import *
+from CollectorApp.DBmanagement import *
 
 
 ##DB management
@@ -19,20 +21,18 @@ import pandas as pd
 # post_datetimes
 
 
-from fb_query import *
-import fb_query
+import CollectorApp.fb_query as fb_query
+reload(fb_query)
 
 # max(post_datetimes)
 datetime.datetime.now()
 end_window_time = datetime.datetime.now()
 # window_delta = datetime.datetime.now() - post_datetimes
 
-window_delta = datetime.timedelta(hours =10 )
-
-import time
+window_delta = datetime.timedelta(hours =24 )
 latest_time = int(time.mktime(end_window_time.timetuple()))
 
-with  open('latest_time.txt','w') as f:
+with  open('CollectorApp/latest_time.txt','w') as f:
     f.write(str(latest_time))
 
 #Setup fbquery object
@@ -40,39 +40,19 @@ with  open('latest_time.txt','w') as f:
 fb1 = fb_query.fb_query(end_upd_window = end_window_time,
                         start_upd_offset = window_delta)
 fb1.access_token
-# 
-# #Set up test page to query
-# page_info = { 'url' : 'myuhurukenyatta',
-#               'page_name' : 'http://www.facebook.com/groups/sabaotonline2010/' }
-# page_info['url'].replace('http://www.facebook.com/','')
-# 
-# #Do query
-# top_level_fields = ['feed','posts']
-# fb1.do_id_query(page_info,
-#                 top_level_fields,
-#                 ret_qry=True)
-# 
-# 
-# fb1.do_comments_query(10)
-# fb1.query_results[0]
-# fb1.to_records() #Convert to records
 
-
-
-df = pd.read_csv('UmatiSources.csv')
+df = pd.read_csv('CollectorApp/UmatiSources.csv')
 Names = df['Name of Site/Page'].values.tolist()
 URLs = df['URL'].values.tolist()
 
 page_infos = zip(Names,URLs)
 page_infos = [ {'page_name' : it[0], 'url' : it[1]} for it in page_infos]
 logging.basicConfig(filename='main.log', filemode='w',level=logging.DEBUG)
-
-
-
  
 top_level_fields = ['feed','posts']
 i=0
-for it in page_infos:
+#KTNKenya is row 17
+for it in page_infos[17:18]:
     log_string = "Name: {0} , url: {1}".format(it['page_name'],it['url'])
     try:
         fb1.do_id_query(it,top_level_fields)
