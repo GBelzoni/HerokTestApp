@@ -1,6 +1,6 @@
 import os
 collector_wd = os.path.dirname(os.path.realpath(__file__))
-collector_wd = '/home/phcostello/git/HerokTestApp/CollectorApp'
+collector_wd = '/home/phcostello/git/HerokTestApp'
 os.chdir(collector_wd)
 import logging
 import datetime
@@ -28,7 +28,7 @@ reload(fb_query)
 datetime.datetime.now()
 end_window_time = datetime.datetime.now()
 # window_delta = datetime.datetime.now() - post_datetimes
-
+import time
 window_delta = datetime.timedelta(hours =24 )
 latest_time = int(time.mktime(end_window_time.timetuple()))
 
@@ -41,15 +41,18 @@ fb1 = fb_query.fb_query(end_upd_window = end_window_time,
                         start_upd_offset = window_delta)
 fb1.access_token
 
-df = pd.read_csv('CollectorApp/UmatiSources.csv')
+df = pd.read_csv('CollectorApp/UmatiSources_firstClean.csv')
+df
 Names = df['Name of Site/Page'].values.tolist()
-URLs = df['URL'].values.tolist()
+URLs = df['FacebookURL'].values.tolist()
 
 page_infos = zip(Names,URLs)
 page_infos = [ {'page_name' : it[0], 'url' : it[1]} for it in page_infos]
 logging.basicConfig(filename='main.log', filemode='w',level=logging.DEBUG)
- 
+
 top_level_fields = ['feed','posts']
+
+start_time = time.time()
 i=0
 #KTNKenya is row 17
 for it in page_infos[17:18]:
@@ -81,5 +84,7 @@ for it in page_infos[17:18]:
         logging.warning( "Failure for id query " + log_string +", row {}".format(i))
         i+=1
 
+time_taken = time.time() - start_time
 
+print "Time taken is ", time_taken/60.0, "seconds"
 

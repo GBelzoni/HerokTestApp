@@ -1,0 +1,9 @@
+- Substitue out groups and leave just page id to work
+
+- Groups without id in URL are a hassle, can get id from http://lookup-id.com/
+
+- Some groups are closed
+
+- pages all have id
+
+- have made cleaned version of names not including groups as have to lookup their id - UmatiSources_firstClean.csv
