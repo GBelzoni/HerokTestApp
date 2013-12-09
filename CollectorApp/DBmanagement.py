@@ -1,9 +1,5 @@
-# import os
-# collector_wd = os.path.dirname(os.path.realpath(__file__))
-# collector_wd = '/home/phcostello/git/HerokTestApp/CollectorApp'
-# os.chdir(collector_wd)
-
-
+from dateutil import parser
+import datetime
 
 def setup_sqlalchemy():
     
@@ -44,12 +40,12 @@ class Comments(Base):
   page_id = Column(Integer)
   post_message = Column(String)
   post_id = Column(Integer)
-  post_created_time = Column(String)
+  post_created_time = Column(DateTime)
   post_comments_id = Column(String, primary_key=True)
   post_comments_message = Column(String)
   post_comments_from_name = Column(String)
   post_comments_from_id = Column(String)
-  post_comments_created_time = Column(String)
+  post_comments_created_time = Column(DateTime) #Column(DateTime(timezone=True))
 
   #Define
   def __init__(self, record):
@@ -63,12 +59,12 @@ class Comments(Base):
     self.page_id = record['PageId']
     self.post_message = record['post_message']
     self.post_id = record['post_id']
-    self.post_created_time = record['post_created_time']
+    self.post_created_time = parser.parse(record['post_created_time'],ignoretz=True)
     self.post_comments_id = record['post_comments_id']
     self.post_comments_message = record['post_comments_message']
     self.post_comments_from_name = record['post_comments_from_name']
     self.post_comments_from_id = record['post_comments_from_id']
-    self.post_comments_created_time = record['post_comments_created_time']
+    self.post_comments_created_time = parser.parse(record['post_comments_created_time'],ignoretz=True)
 
      
 
@@ -89,30 +85,10 @@ def create_all(engine):
     #Create the tables in db specified by engine
     Base.metadata.create_all(engine)
 
-###Check all fields are there
-##
-##print rc_comments.page_name
-##print rc_comments.page_id
-##print rc_comments.post_message
-##print rc_comments.post_id
-##print rc_comments.post_created_time
-##print rc_comments.post_comments_id
-##print rc_comments.post_comments_message
-##print rc_comments.post_comments_from_name
-##print rc_comments.post_comments_from_id
-##print rc_comments.post_comments_created_time
 
 def add_record(rc,session):
-
-  rc_comments = Comments(rc)
-  session.merge(rc_comments) #use merge rather than add to deal with duplicates
-#   session.add(rc_comments)
-##  try:
-##    session.commit()
-##  except IntegrityError:
-##    print "post id {0} already in db".format(rc_comments.post_id)
-##    session.rollback()
-##                                                      
+    rc_comments = Comments(rc)
+    session.merge(rc_comments) #use merge rather than add to deal with duplicates
 
 
 
