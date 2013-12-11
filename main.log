@@ -1,0 +1,200 @@
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /jeff.m.koinange?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 24
+WARNING:root:Failure for id query Name: jeff koinange , url: jeff.m.koinange, row 0
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /standardkenya?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 20
+WARNING:root:Failure for id query Name: The standard media group , url: standardkenya, row 1
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /TheWaziCampaign?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 24
+WARNING:root:Failure for id query Name: The wazi campaign , url: TheWaziCampaign, row 2
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /CouncilofGovernors?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 24
+WARNING:root:Failure for id query Name: concil of governors  , url: CouncilofGovernors, row 3
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /356377367804085?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 24
+WARNING:root:Failure for id query Name: Icc must leave uhuru kenyatta and william ruto alone , url: 356377367804085, row 4
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /430439110325598?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 24
+WARNING:root:Failure for id query Name: Icc trial monitor , url: 430439110325598, row 5
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /bunyore.board?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 24
+WARNING:root:Failure for id query Name: Bunyore Discussion Board , url: bunyore.board, row 6
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /466239656780047?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 24
+WARNING:root:Failure for id query Name: kenya county updates and Developments , url: 466239656780047, row 7
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /369180626526897?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 24
+WARNING:root:Failure for id query Name: kiambu county government , url: 369180626526897, row 8
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /BensoudaDropUhururutoIccCasesTheyAreFabricated?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 24
+WARNING:root:Failure for id query Name: Bensouda drop uhuru/ruto cases they are fabricated , url: BensoudaDropUhururutoIccCasesTheyAreFabricated, row 9
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /195670785802?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 21
+WARNING:root:Failure for id query Name: citizen news , url: 195670785802, row 10
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /K24TVNews?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 522
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /K24TVNews?fields=posts.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 497
+INFO:root:Success for id query Name: k24 tv , url: K24TVNews, row 11
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /187678903140_10151910898323141?fields=message,created_time,comments.limit(300).fields(message,from,created_time,id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 193
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /187678903140_10151910940688141?fields=message,created_time,comments.limit(300).fields(message,from,created_time,id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 142
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /187678903140_10151910920458141?fields=message,created_time,comments.limit(300).fields(message,from,created_time,id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 619
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /187678903140_10151910945868141?fields=message,created_time,comments.limit(300).fields(message,from,created_time,id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 226
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /187678903140_10151910919228141?fields=message,created_time,comments.limit(300).fields(message,from,created_time,id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 119
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /187678903140_10151910891693141?fields=message,created_time,comments.limit(300).fields(message,from,created_time,id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 1246
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /187678903140_10151910893573141?fields=message,created_time,comments.limit(300).fields(message,from,created_time,id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 231
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /187678903140_10151910896523141?fields=message,created_time,comments.limit(300).fields(message,from,created_time,id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 212
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /187678903140_10151910889223141?fields=message,created_time,comments.limit(300).fields(message,from,created_time,id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 267
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /187678903140_10151910970588141?fields=message,created_time,comments.limit(300).fields(message,from,created_time,id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 564
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /187678903140_10151910949463141?fields=message,created_time,comments.limit(300).fields(message,from,created_time,id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 863
+INFO:root:Sucess for comment read for page_name k24 tv row 11
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /487760644613563?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 400 89
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /487760644613563?fields=posts.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 400 89
+INFO:root:Success for id query Name: luhyas against being bought by the kenyatta money , url: 487760644613563, row 12
+INFO:root:Sucess for comment read for page_name luhyas against being bought by the kenyatta money row 12
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /117941667695?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 21
+WARNING:root:Failure for id query Name: Powerbreakfastshow , url: 117941667695, row 13
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /TheEastAfrican?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 24
+WARNING:root:Failure for id query Name: the east african , url: TheEastAfrican, row 14
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /lists/104435146379281?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 400 102
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /lists/104435146379281?fields=posts.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 400 102
+INFO:root:Success for id query Name: university of nairobi , url: lists/104435146379281, row 15
+INFO:root:Sucess for comment read for page_name university of nairobi row 15
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /bogonko.bosire?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 24
+WARNING:root:Failure for id query Name: Bogonko Bosire , url: bogonko.bosire, row 16
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /koigi.wawamwere?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 24
+WARNING:root:Failure for id query Name: Koigi Wa wamwere  , url: koigi.wawamwere, row 17
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /Mankokopelli?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 18
+WARNING:root:Failure for id query Name: Okiya Omutata Okoiti , url: Mankokopelli, row 18
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /yvonne.khamatikilonzo?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 18
+WARNING:root:Failure for id query Name: Yvonne Khamati , url: yvonne.khamatikilonzo, row 19
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /210527812318268?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 24
+WARNING:root:Failure for id query Name: makau mutua , url: 210527812318268, row 20
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /kenyans.uhuru?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 24
+WARNING:root:Failure for id query Name: 10 million kenyans to support uhuru kenyatta for presidency. , url: kenyans.uhuru, row 21
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /oyugit?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 19
+WARNING:root:Failure for id query Name: Antony Oyugi , url: oyugit, row 22
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /carolinemutoko?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 24
+WARNING:root:Failure for id query Name: Caroline Mutoko , url: carolinemutoko, row 23
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /150589741636194?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 465
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /150589741636194?fields=posts.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 794
+INFO:root:Success for id query Name: Chamgei FM Radio , url: 150589741636194, row 24
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /150589741636194_741555559206273?fields=message,created_time,comments.limit(300).fields(message,from,created_time,id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 286
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /150589741636194_741555259206303?fields=message,created_time,comments.limit(300).fields(message,from,created_time,id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 286
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /150589741636194_741542932540869?fields=message,created_time,comments.limit(300).fields(message,from,created_time,id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 159
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /150589741636194_741562999205529?fields=message,created_time,comments.limit(300).fields(message,from,created_time,id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 697
+INFO:root:Sucess for comment read for page_name Chamgei FM Radio row 24
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /261061365404?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 485
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /261061365404?fields=posts.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 485
+INFO:root:Success for id query Name: Citizen TV Kenya , url: 261061365404, row 25
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /261061365404_10153562807320405?fields=message,created_time,comments.limit(300).fields(message,from,created_time,id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 607
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /261061365404_10153562812770405?fields=message,created_time,comments.limit(300).fields(message,from,created_time,id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 1100
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /261061365404_10153562816105405?fields=message,created_time,comments.limit(300).fields(message,from,created_time,id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 857
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /261061365404_10153562834335405?fields=message,created_time,comments.limit(300).fields(message,from,created_time,id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 647
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /261061365404_10153562839860405?fields=message,created_time,comments.limit(300).fields(message,from,created_time,id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 648
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /261061365404_10153562829460405?fields=message,created_time,comments.limit(300).fields(message,from,created_time,id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 1098
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /261061365404_10153562782555405?fields=message,created_time,comments.limit(300).fields(message,from,created_time,id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 1059
+INFO:root:Sucess for comment read for page_name Citizen TV Kenya row 25
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /Railonzo2013?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 24
+WARNING:root:Failure for id query Name: Coalition for Reform and Democracy - CORD Railonzo 2013 , url: Railonzo2013, row 26
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
+DEBUG:requests.packages.urllib3.connectionpool:"GET /crazyidlers?fields=feed.since(1386787725).limit(300).fields(id)&access_token=CAAKJ76Rn5XkBALyuZBTGj731bsTKdMFgHKP6JbOFlybDY4MhtnI3oEc9II03orIMboojmB1NfZB8p4yJeZCezZBTv7wi6VaDj657GG3fNlZAqB26CYRRyCJg1Tuis1v5UfbLIyqAo20BrrWclZBY5MwIWL8ZCLNnGmjEgRfZBcTAiuZBCskWD37aQ3vrsiq9ceAgZD%0A HTTP/1.1" 200 24
+WARNING:root:Failure for id query Name: Crazy Kenyan Idlers , url: crazyidlers, row 27
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): graph.facebook.com
+DEBUG:requests.packages.urllib3.connectionpool:Setting read timeout to None
