@@ -1,10 +1,14 @@
 import os
-import logging
 import requests
 #get unix time for x time ago.
 import datetime
 import time
 
+
+
+#User 'logger.py' for logging settings
+import logging
+logger = logging.getLogger('root.'+__name__)
 
 #These come from app I have setup
 App_ID='714612301882745'
@@ -56,7 +60,6 @@ class fb_query(object):
         #Create posts update window offset from end_upd_window
         self.end_upd_window = end_upd_window
         posts_since = end_upd_window - start_upd_offset
-        print posts_since
         self.posts_since_unix = int(time.mktime(posts_since.timetuple()))
 
         
@@ -74,7 +77,7 @@ class fb_query(object):
         #Get page ids
         
         for field in top_level_fields:
-            print 'doing field {}'.format(field)
+            logger.info('doing field {}'.format(field))
             id_query2 = 'https://'+self.id_query.format(page_url,
                                                         field,
                                                         self.posts_since_unix,
@@ -121,14 +124,15 @@ class fb_query(object):
                 r_comments = requests.get(get_qry_data2)
                 comments_json = r_comments.json()
                 try:
-                    print len(comments_json['comments']['data'])
+                    logger.info("Retrieved {0} comments for post {1}".format(len(comments_json['comments']['data']),
+                                                                             comments_json['id']))
                     self.query_results.append(comments_json)
                 except:
                     #Add exception handling here
-                    print 'no comments for {}'.format(comments_json['id'])
+                    logger.warning('no comments for {}'.format(comments_json['id']))
                     continue
         else:
-            print "no ids"
+            logger.info("no ids")
         
 
 
@@ -169,7 +173,6 @@ class fb_query(object):
             thisRecord['post_created_time'] = it1['created_time']
           except:
             error_str = 'No message in post {}'.format(it1['id'])
-            print error_str
             logging.warning(error_str)
             continue #if error then got to next post
           else:
@@ -186,12 +189,10 @@ class fb_query(object):
                     
                 except:
                   error_str = 'Problem with comment id {1}, on post id[2]'.format(it1['id'],it2['id'])
-                  print error_str
                   logging.warning(error_str)
                   continue #if error then got to next comment in post
             except:
               error_str = 'No comments for post id {0}'.format(it1['id'])
-              print error_str
               logging.warning(error_str)
               continue #if error then got to next comment in post
 
