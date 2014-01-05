@@ -13,6 +13,7 @@ Created on Jan 4, 2014
 #then just import this file before you set up other loggers 
 #Set up top level logging
 import logging
+import os
 
 logger = logging.getLogger('root')
 logger.setLevel(logging.INFO)
@@ -22,7 +23,10 @@ ch = logging.StreamHandler()
 ch.setLevel(logging.INFO)
 
 # create file handler and set level to debug
-fh = logging.FileHandler(filename='main.log')
+log_file_name = 'collector.log'
+if(os.path.exists(log_file_name)):
+    os.remove(log_file_name)
+fh = logging.FileHandler(filename=log_file_name)
 fh.setLevel(logging.INFO)
 
 # create formatter
