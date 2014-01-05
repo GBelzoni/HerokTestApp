@@ -1,0 +1,7 @@
+2014-01-05 12:10:07,258 - root.__main__ - main - INFO - STARTING: Collection range from: 2014-01-05 11:10:07 to: 2014-01-05 12:10:07
+2014-01-05 12:10:07,612 - root.__main__ - main - INFO - Trying post id query for Name: jeff koinange , url: jeff.m.koinange
+2014-01-05 12:10:07,612 - root.CollectorApp.fb_query - do_id_query - INFO - doing field feed
+2014-01-05 12:10:08,744 - root.__main__ - main - ERROR - Failure for id query Name: jeff koinange , url: jeff.m.koinange, row 0
+2014-01-05 12:10:08,744 - root.__main__ - main - INFO - Trying post id query for Name: The standard media group , url: standardkenya
+2014-01-05 12:10:08,745 - root.CollectorApp.fb_query - do_id_query - INFO - doing field feed
+2014-01-05 12:10:16,080 - root.CollectorApp.fb_query - do_id_query - INFO - doing field posts
