@@ -15,7 +15,7 @@ def get_data():
 
 @app.route('/displayHello/')
 def disply_html():
-	return render_template('helloworld2.html') 
+	return render_template('helloworld2.html')
 
 
 if __name__ == '__main__':

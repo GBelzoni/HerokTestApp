@@ -1,0 +1,128 @@
+2015-01-16 08:42:01,926 - root.__main__ - main - INFO - STARTING: Collection range from: 2015-01-16 07:42:01 to: 2015-01-16 08:42:01
+2015-01-16 08:42:03,118 - root.__main__ - main - INFO - Trying post id query for Name: KTN Kenya , url: KTNKenya
+2015-01-16 08:42:03,120 - root.CollectorApp.fb_query - do_id_query - INFO - doing field feed
+2015-01-16 08:42:06,586 - root.CollectorApp.fb_query - do_id_query - INFO - doing field posts
+2015-01-16 08:42:09,946 - root.__main__ - main - INFO - Success for id query Name: KTN Kenya , url: KTNKenya, row 0
+2015-01-16 08:42:10,269 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 1 comments for post 40941045532_10155170624655533
+2015-01-16 08:42:10,872 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 219 comments for post 40941045532_10155170599585533
+2015-01-16 08:42:11,207 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 3 comments for post 40941045532_10155170671445533
+2015-01-16 08:42:11,548 - root.CollectorApp.fb_query - do_comments_query - WARNING - no comments for 40941045532_10155167705980533
+2015-01-16 08:42:11,908 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 11 comments for post 40941045532_10155170625340533
+2015-01-16 08:42:12,267 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 12 comments for post 40941045532_10155170608140533
+2015-01-16 08:42:12,613 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 10 comments for post 40941045532_10155170652085533
+2015-01-16 08:42:12,953 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 1 comments for post 40941045532_10155170682605533
+2015-01-16 08:42:13,416 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 105 comments for post 40941045532_10155170595600533
+2015-01-16 08:42:13,819 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 3 comments for post 40941045532_10155170672815533
+2015-01-16 08:42:13,824 - root.__main__ - main - INFO - Sucess for comment read for page_name KTN Kenya row 0
+2015-01-16 08:42:13,831 - root.__main__ - main - INFO - converted to records
+2015-01-16 08:42:14,511 - root.__main__ - main - INFO - Success adding records for KTNKenya
+2015-01-16 08:42:14,513 - root.__main__ - main - INFO - Trying post id query for Name: Makau W. Mutua , url: 210527812318268
+2015-01-16 08:42:14,513 - root.CollectorApp.fb_query - do_id_query - INFO - doing field feed
+2015-01-16 08:42:14,792 - root.__main__ - main - ERROR - Failure for id query Name: Makau W. Mutua , url: 210527812318268, row 1
+2015-01-16 08:42:14,794 - root.__main__ - main - INFO - Trying post id query for Name: Martha Karua , url: MarthaKarua
+2015-01-16 08:42:14,796 - root.CollectorApp.fb_query - do_id_query - INFO - doing field feed
+2015-01-16 08:42:15,146 - root.__main__ - main - ERROR - Failure for id query Name: Martha Karua , url: MarthaKarua, row 2
+2015-01-16 08:42:15,150 - root.__main__ - main - INFO - ENDING: Collection range from: 2015-01-16 07:42:01 to: 2015-01-16 08:42:01
+2015-01-16 08:42:15,151 - root.__main__ - main - INFO - Time taken is 0.200527648131 minutes
+2015-01-16 08:42:15,162 - root.__main__ - main - INFO - STARTING: Collection range from: 2015-01-16 06:42:01 to: 2015-01-16 07:42:01
+2015-01-16 08:42:15,180 - root.__main__ - main - INFO - Trying post id query for Name: KTN Kenya , url: KTNKenya
+2015-01-16 08:42:15,181 - root.CollectorApp.fb_query - do_id_query - INFO - doing field feed
+2015-01-16 08:42:18,532 - root.CollectorApp.fb_query - do_id_query - INFO - doing field posts
+2015-01-16 08:42:22,028 - root.__main__ - main - INFO - Success for id query Name: KTN Kenya , url: KTNKenya, row 0
+2015-01-16 08:42:22,353 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 1 comments for post 40941045532_10155170624655533
+2015-01-16 08:42:22,700 - root.CollectorApp.fb_query - do_comments_query - WARNING - no comments for 40941045532_10155167701150533
+2015-01-16 08:42:23,285 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 220 comments for post 40941045532_10155170599585533
+2015-01-16 08:42:23,609 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 3 comments for post 40941045532_10155170671445533
+2015-01-16 08:42:23,953 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 4 comments for post 40941045532_10155170454680533
+2015-01-16 08:42:24,297 - root.CollectorApp.fb_query - do_comments_query - WARNING - no comments for 40941045532_10155167705980533
+2015-01-16 08:42:24,648 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 11 comments for post 40941045532_10155170625340533
+2015-01-16 08:42:24,996 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 10 comments for post 40941045532_10155170543260533
+2015-01-16 08:42:25,330 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 2 comments for post 40941045532_10155170487610533
+2015-01-16 08:42:25,667 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 8 comments for post 40941045532_10155170518400533
+2015-01-16 08:42:26,038 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 12 comments for post 40941045532_10155170608140533
+2015-01-16 08:42:26,457 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 10 comments for post 40941045532_10155170652085533
+2015-01-16 08:42:26,801 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 1 comments for post 40941045532_10155170682605533
+2015-01-16 08:42:27,246 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 106 comments for post 40941045532_10155170595600533
+2015-01-16 08:42:27,613 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 3 comments for post 40941045532_10155170672815533
+2015-01-16 08:42:27,622 - root.__main__ - main - INFO - Sucess for comment read for page_name KTN Kenya row 0
+2015-01-16 08:42:27,627 - root.__main__ - main - INFO - converted to records
+2015-01-16 08:42:28,391 - root.__main__ - main - INFO - Success adding records for KTNKenya
+2015-01-16 08:42:28,393 - root.__main__ - main - INFO - Trying post id query for Name: Makau W. Mutua , url: 210527812318268
+2015-01-16 08:42:28,394 - root.CollectorApp.fb_query - do_id_query - INFO - doing field feed
+2015-01-16 08:42:28,749 - root.__main__ - main - ERROR - Failure for id query Name: Makau W. Mutua , url: 210527812318268, row 1
+2015-01-16 08:42:28,751 - root.__main__ - main - INFO - Trying post id query for Name: Martha Karua , url: MarthaKarua
+2015-01-16 08:42:28,752 - root.CollectorApp.fb_query - do_id_query - INFO - doing field feed
+2015-01-16 08:42:29,095 - root.__main__ - main - ERROR - Failure for id query Name: Martha Karua , url: MarthaKarua, row 2
+2015-01-16 08:42:29,098 - root.__main__ - main - INFO - ENDING: Collection range from: 2015-01-16 06:42:01 to: 2015-01-16 07:42:01
+2015-01-16 08:42:29,100 - root.__main__ - main - INFO - Time taken is 0.23196669817 minutes
+2015-01-16 08:42:29,108 - root.__main__ - main - INFO - STARTING: Collection range from: 2015-01-16 05:42:01 to: 2015-01-16 06:42:01
+2015-01-16 08:42:29,124 - root.__main__ - main - INFO - Trying post id query for Name: KTN Kenya , url: KTNKenya
+2015-01-16 08:42:29,125 - root.CollectorApp.fb_query - do_id_query - INFO - doing field feed
+2015-01-16 08:42:32,357 - root.CollectorApp.fb_query - do_id_query - INFO - doing field posts
+2015-01-16 08:42:35,806 - root.__main__ - main - INFO - Success for id query Name: KTN Kenya , url: KTNKenya, row 0
+2015-01-16 08:42:36,164 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 1 comments for post 40941045532_10155170624655533
+2015-01-16 08:42:36,474 - root.CollectorApp.fb_query - do_comments_query - WARNING - no comments for 40941045532_10155167701150533
+2015-01-16 08:42:37,193 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 221 comments for post 40941045532_10155170599585533
+2015-01-16 08:42:37,536 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 3 comments for post 40941045532_10155170671445533
+2015-01-16 08:42:37,905 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 4 comments for post 40941045532_10155170454680533
+2015-01-16 08:42:38,251 - root.CollectorApp.fb_query - do_comments_query - WARNING - no comments for 40941045532_10155167685280533
+2015-01-16 08:42:38,582 - root.CollectorApp.fb_query - do_comments_query - WARNING - no comments for 40941045532_10155167705980533
+2015-01-16 08:42:38,948 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 11 comments for post 40941045532_10155170625340533
+2015-01-16 08:42:39,349 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 10 comments for post 40941045532_10155170543260533
+2015-01-16 08:42:39,711 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 3 comments for post 40941045532_10155170421830533
+2015-01-16 08:42:40,070 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 2 comments for post 40941045532_10155170487610533
+2015-01-16 08:42:40,417 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 8 comments for post 40941045532_10155170518400533
+2015-01-16 08:42:40,809 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 12 comments for post 40941045532_10155170608140533
+2015-01-16 08:42:41,172 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 10 comments for post 40941045532_10155170652085533
+2015-01-16 08:42:41,569 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 1 comments for post 40941045532_10155170682605533
+2015-01-16 08:42:42,030 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 50 comments for post 40941045532_10155170379035533
+2015-01-16 08:42:42,492 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 106 comments for post 40941045532_10155170595600533
+2015-01-16 08:42:42,828 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 3 comments for post 40941045532_10155170672815533
+2015-01-16 08:42:42,835 - root.__main__ - main - INFO - Sucess for comment read for page_name KTN Kenya row 0
+2015-01-16 08:42:42,842 - root.__main__ - main - INFO - converted to records
+2015-01-16 08:42:43,678 - root.__main__ - main - INFO - Success adding records for KTNKenya
+2015-01-16 08:42:43,679 - root.__main__ - main - INFO - Trying post id query for Name: Makau W. Mutua , url: 210527812318268
+2015-01-16 08:42:43,680 - root.CollectorApp.fb_query - do_id_query - INFO - doing field feed
+2015-01-16 08:42:44,019 - root.__main__ - main - ERROR - Failure for id query Name: Makau W. Mutua , url: 210527812318268, row 1
+2015-01-16 08:42:44,021 - root.__main__ - main - INFO - Trying post id query for Name: Martha Karua , url: MarthaKarua
+2015-01-16 08:42:44,024 - root.CollectorApp.fb_query - do_id_query - INFO - doing field feed
+2015-01-16 08:42:44,377 - root.__main__ - main - ERROR - Failure for id query Name: Martha Karua , url: MarthaKarua, row 2
+2015-01-16 08:42:44,381 - root.__main__ - main - INFO - ENDING: Collection range from: 2015-01-16 05:42:01 to: 2015-01-16 06:42:01
+2015-01-16 08:42:44,383 - root.__main__ - main - INFO - Time taken is 0.254284934203 minutes
+2015-01-16 08:42:44,392 - root.__main__ - main - INFO - STARTING: Collection range from: 2015-01-16 04:42:01 to: 2015-01-16 05:42:01
+2015-01-16 08:42:44,407 - root.__main__ - main - INFO - Trying post id query for Name: KTN Kenya , url: KTNKenya
+2015-01-16 08:42:44,408 - root.CollectorApp.fb_query - do_id_query - INFO - doing field feed
+2015-01-16 08:42:47,815 - root.CollectorApp.fb_query - do_id_query - INFO - doing field posts
+2015-01-16 08:42:51,236 - root.__main__ - main - INFO - Success for id query Name: KTN Kenya , url: KTNKenya, row 0
+2015-01-16 08:42:51,621 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 1 comments for post 40941045532_10155170624655533
+2015-01-16 08:42:51,961 - root.CollectorApp.fb_query - do_comments_query - WARNING - no comments for 40941045532_10155167701150533
+2015-01-16 08:42:52,578 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 221 comments for post 40941045532_10155170599585533
+2015-01-16 08:42:52,907 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 3 comments for post 40941045532_10155170671445533
+2015-01-16 08:42:53,250 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 4 comments for post 40941045532_10155170454680533
+2015-01-16 08:42:53,638 - root.CollectorApp.fb_query - do_comments_query - WARNING - no comments for 40941045532_10155167685280533
+2015-01-16 08:42:53,981 - root.CollectorApp.fb_query - do_comments_query - WARNING - no comments for 40941045532_10155167705980533
+2015-01-16 08:42:54,323 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 3 comments for post 40941045532_10155170229170533
+2015-01-16 08:42:54,695 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 11 comments for post 40941045532_10155170625340533
+2015-01-16 08:42:55,052 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 10 comments for post 40941045532_10155170543260533
+2015-01-16 08:42:55,392 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 3 comments for post 40941045532_10155170421830533
+2015-01-16 08:42:55,739 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 5 comments for post 40941045532_10155170122975533
+2015-01-16 08:42:56,088 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 2 comments for post 40941045532_10155170487610533
+2015-01-16 08:42:56,447 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 8 comments for post 40941045532_10155170518400533
+2015-01-16 08:42:56,802 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 1 comments for post 40941045532_10155170262310533
+2015-01-16 08:42:57,181 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 13 comments for post 40941045532_10155170608140533
+2015-01-16 08:42:57,529 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 10 comments for post 40941045532_10155170652085533
+2015-01-16 08:42:57,892 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 1 comments for post 40941045532_10155170682605533
+2015-01-16 08:42:58,293 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 50 comments for post 40941045532_10155170379035533
+2015-01-16 08:42:58,745 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 106 comments for post 40941045532_10155170595600533
+2015-01-16 08:42:59,076 - root.CollectorApp.fb_query - do_comments_query - INFO - Retrieved 3 comments for post 40941045532_10155170672815533
+2015-01-16 08:42:59,083 - root.__main__ - main - INFO - Sucess for comment read for page_name KTN Kenya row 0
+2015-01-16 08:42:59,092 - root.__main__ - main - INFO - converted to records
+2015-01-16 08:43:00,004 - root.__main__ - main - INFO - Success adding records for KTNKenya
+2015-01-16 08:43:00,004 - root.__main__ - main - INFO - Trying post id query for Name: Makau W. Mutua , url: 210527812318268
+2015-01-16 08:43:00,005 - root.CollectorApp.fb_query - do_id_query - INFO - doing field feed
+2015-01-16 08:43:00,320 - root.__main__ - main - ERROR - Failure for id query Name: Makau W. Mutua , url: 210527812318268, row 1
+2015-01-16 08:43:00,320 - root.__main__ - main - INFO - Trying post id query for Name: Martha Karua , url: MarthaKarua
+2015-01-16 08:43:00,321 - root.CollectorApp.fb_query - do_id_query - INFO - doing field feed
+2015-01-16 08:43:00,637 - root.__main__ - main - ERROR - Failure for id query Name: Martha Karua , url: MarthaKarua, row 2
+2015-01-16 08:43:00,641 - root.__main__ - main - INFO - ENDING: Collection range from: 2015-01-16 04:42:01 to: 2015-01-16 05:42:01
+2015-01-16 08:43:00,643 - root.__main__ - main - INFO - Time taken is 0.270570834478 minutes

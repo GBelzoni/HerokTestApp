@@ -3,24 +3,24 @@ import os
 import datetime
 import pickle
 import time
+#collector_wd = os.path.dirname(os.path.realpath(__file__))
+collector_wd = '/home/patrick/HerokTestApp'
+os.chdir(collector_wd)
+
 
 #User 'logger.py' for logging settings
 import logging
 import loggerSetup
 logger = logging.getLogger('root.'+__name__)
 
-#collector_wd = os.path.dirname(os.path.realpath(__file__))
-collector_wd = '/home/phcostello/git/HerokTestApp'
-os.chdir(collector_wd)
-
 #for ipython console
-#%cpaste 
-# 
+#%cpaste
+#
 # f = open('CollectorApp/latest_time.txt')
 # un_latest = f.read()
 # un_latest
 # datetime.datetime.fromtimestamp(float(1385841926))
-# 
+#
 # latest_time = '2013-12-12 14:01:23.000000'
 # import pandas as pd
 # dt_latest = pd.to_datetime(latest_time)
@@ -34,25 +34,25 @@ def main( collect_from, collect_to = datetime.datetime.now()):
     from CollectorApp.DBmanagement import Comments
     import CollectorApp.fb_query as fb_query
 #     reload(fb_query)
-    
+
     ##DB management
     dbm = DBmanager('Collector.sqlite')
     dbm.create_all()
-    
-    
+
+
     #Setup collection window params
     latest_time = int(time.mktime(collect_to.timetuple()))
     window_delta = collect_to - collect_from
-    
-    
+
+
     #Save latest collected to
     with  open('CollectorApp/latest_time.txt','w') as f:
         f.write(str(latest_time))
-    
+
     #Setup fbquery object - this needs the window to collect data
     fb1 = fb_query.fb_query(end_upd_window = collect_to,
                             start_upd_offset = window_delta)
-    
+
     #Get Source List
     import pandas as pd
     df = pd.read_csv('CollectorApp/UmatiSources_firstClean.csv')
@@ -60,8 +60,8 @@ def main( collect_from, collect_to = datetime.datetime.now()):
     URLs = df['FacebookURL'].values.tolist()
     page_infos = zip(Names,URLs)
     page_infos = [ {'page_name' : it[0], 'url' : it[1]} for it in page_infos]
-    
-    
+
+
     #Setup FB fields to query for comments - look at FB Graph API explorer for possibilities
     top_level_fields = ['feed','posts']
 
@@ -71,7 +71,7 @@ def main( collect_from, collect_to = datetime.datetime.now()):
     i=0
     #KTNKenya is row 44
     #Caroling Mutoko is row 23
-    for it in page_infos:
+    for it in page_infos[44:47]:
         log_string = "Name: {0} , url: {1}".format(it['page_name'],it['url'])
         logger.info("Trying post id query for " + log_string)
         try:
@@ -102,7 +102,7 @@ def main( collect_from, collect_to = datetime.datetime.now()):
         except:
             logger.error( "Failure for id query " + log_string +", row {}".format(i))
             i+=1
-    
+
     time_taken = time.time() - start_time
     logger.info("ENDING: Collection range from: {0} to: {1}".format(collect_from.strftime("%Y-%m-%d %H:%M:%S"),
                                                                     collect_to.strftime("%Y-%m-%d %H:%M:%S")))
@@ -111,9 +111,9 @@ def main( collect_from, collect_to = datetime.datetime.now()):
 if __name__ == '__main__':
     collect_dates = [[datetime.datetime.now() - datetime.timedelta(hours=(j+1)),
                      datetime.datetime.now() - datetime.timedelta(hours=j) ]for j in range(0,4)]
-    
+
     for date in collect_dates:
-        
+
         main(date[0], date[1])
 
 
@@ -136,7 +136,7 @@ if __name__ == '__main__':
 
 
 
-#Adding records to db 
+#Adding records to db
 # for i in range(0, len(record_list)):
 #     print i
 #     add_record(record_list[i],session)
@@ -146,22 +146,22 @@ if __name__ == '__main__':
 # fb1.post_ids
 # for i in range(0, len(record_list)):
 #     print record_list[i]['post_comments_message']
-         
-    
-    
+
+
+
 #Load saved data from pickles and examine
 # pickles = os.listdir('PickleJar')
 # pickles[1]#KTN Kenya
 # rcds = pickle.load(open('PickleJar/'+pickles[1]))
-# 
+#
 # i=0
 # this_time = rcds[0]['post_comments_created_time']
-# 
+#
 # from dateutil import parser
 # dt = parser.parse(this_time, ignoretz= True)
 # dt = dt.replace(tzinfo = None)
-# 
-# 
+#
+#
 # for pk in pickles:
 #     fil = open('PickleJar/'+pk)
 #     rcds = pickle.load(fil)
@@ -169,10 +169,10 @@ if __name__ == '__main__':
 #     print pk
 #     for i in range(0, len(rcds)):
 #         add_record(rcds[i],session)
-# 
+#
 # session.commit()
-# 
-#     
+#
+#
 # for i in rcds(0, len(rcds)):
 #     print rcds[i]['post_comments_message']
 

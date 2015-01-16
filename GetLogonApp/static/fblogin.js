@@ -1,6 +1,6 @@
 window.fbAsyncInit = function() {
   
-  var app_domain = 'localhost:5000'
+  var app_domain = 'localhost:9003'
   var app_id = '714612301882745' //pc local dev
   // var app_id = '565857103493139' //ihub dev
   
